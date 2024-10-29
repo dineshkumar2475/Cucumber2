@@ -10,6 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: echo "Running build and test process"
+  displayName: 'Build and Test'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
